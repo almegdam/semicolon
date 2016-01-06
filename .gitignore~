@@ -1,7 +1,6 @@
 *.pyc
 *.py~
 __pycache__
-db.sqlite3
 virenv
 /static
 .DS_Store
