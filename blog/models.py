@@ -1,8 +1,8 @@
 from django.db import models
-#timezone to deal with time
+##timezone to deal with time
 from django.utils import timezone
 
-# Create your models here.
+##Create your models here.
 
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
@@ -10,10 +10,18 @@ class Post(models.Model):
 	text = models.TextField()
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
-
+	wallpaper = models.FileField(upload_to='')
 	def publish(self):
 		self.published_date = time_zone.now()
 		self.save()
 
 	def __str__(self):
 		return self.title
+
+#try
+# -*- coding: utf-8 -*gedi-
+"""from django.db import models	
+class Document(models.Model):
+    docfile = models.FileField(upload_to="images")
+"""
+#end try

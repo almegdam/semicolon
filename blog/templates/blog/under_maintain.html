@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container-fluid" >
+	<h1 class="site-maintain"> عذرا الصفحة تحت الصيانة </h1>
+	<div class="row">		
+			<img src="{% static 'imgs/undermaintenance.jpg' %}" class="img-responsive" width="100%" height="100%">
+	</div>
+</div>
+
+{% endblock %}
+

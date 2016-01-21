@@ -1,0 +1,303 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+a {
+		text-decoration: none !important;
+}
+
+body {
+	margin: 0px;
+	background-color:#F4F4F4;
+	height: 100%;
+/*	line-height: 20px;*/
+}
+
+/*navbar top */
+.navbar-default {
+  background-color: #3cb6e7;
+  border-color: #2ba2c0;
+}
+.navbar-default .navbar-brand {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #f3fefc;
+}
+.navbar-default .navbar-text {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #f3fefc;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #3cb6e7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #3cb6e7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f6f6f7;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f6f6f7;
+}
+.navbar-default .navbar-link {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-link:hover {
+  color: #f3fefc;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f6f6f7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f3fefc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f3fefc;
+    background-color: #2ba2c0;
+  }
+}
+
+.navbar {
+	margin: 0px
+}
+/* end nvabar top */
+
+/* image top page */
+.img-top {
+    background-size: cover;
+    background-position: center center;
+    min-height: 180px;
+    max-height: 200px;
+    border-bottom: 1px solid #2ba2c0;
+}
+/* end image top page */
+
+.content , .post{
+	margin-top:20px;
+}
+
+* {
+    box-	sizing: border-box;
+}
+
+div.box-semicolon {
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    overflow: hidden;
+    font-size: small;
+    transition: box-shadow 0.2s ease 0s;
+    width: 100%;
+    position: relative;
+}
+
+div.box-semicolon .thumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+div.box-semicolon .link-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: transparent none repeat scroll 0% 0%;
+    transition: background-color 0.3s ease 0s;
+}
+/*
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+*/
+
+div.box .title {
+    display: block;
+    font-size: 1.3em;
+    line-height: 1.6;
+    min-height: 52px;
+    overflow: hidden;
+    padding: 10px;
+    color: #000;
+		height:180px;
+}
+
+div.box-semicolon .thumb img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0px none;
+    transition: all 0.2s ease 0s;
+		height: 180px !important;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+}
+
+div.box-semicolon .title {
+    display: block;
+    font-size: 1.3em;
+    line-height: 1.6;
+    min-height: 52px;
+    overflow: hidden;
+    padding: 10px;
+    color: #000;
+}
+
+.h-space {
+    height: 30px;
+}
+
+.clear {
+	clear: both;
+}
+
+div.footer {
+    font-size: 1em;
+    margin: 15px 0px 0px;
+    width: 100%;
+    background-color: #3CB6E7;
+		color: #ffffff;
+    vertical-align: baseline;
+    display: block;
+    padding: 30px 0px;
+}
+
+.box {
+    margin-bottom: 30px;
+}
+
+.post-detail{
+		background-color: #ffffff;
+		padding: 15px;
+}
+
+.wallpaper {
+}
+
+* {font-family: 'Droid Arabic Kufi', serif;}
+
+.post-text {
+	font-size: 20px;
+}
+.post-text p{
+	font-size: 20px;
+	/*line-height: 20px;*/	
+}
+
+.maintain {
+	margin:0px;
+}
+
+.site-maintain {
+	background-color: #ffffff;
+	margin: auto;
+	padding-top:10px;
+	font-size:32px;
+	text-align: center;
+	font-size: 8vw;
+}
+
+/* wrap site */
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,#footer {
+	min-height: 60px;
+	padding: 3px 0px;
+}
+
+#footer {
+	background-color: #3CB6E7;
+	color: #ffffff;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+/*  	margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+*/
+	}
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+/*.container {
+	width: auto;
+	/*max-width: 680px;*
+}*/
+.container .credit {
+	margin: 20px 0;
+}
+/* end wrap site */
+
+div.footer {
+    font-size: 1em;
+    margin: 15px 0px 0px;
+    width: 100%;
+    background-color: #3CB6E7;
+		color: #ffffff;
+    vertical-align: middle;
+    display: block;
+    padding: 30px 0px;
+}
+
+div.contact {
+	margin-top: 15px;
+	font-size: 1.3em;
+	font-weight: bold; 
+}
+
+

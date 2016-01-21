@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container post">
+<div class="row"></div>
+	<div class="row">
+		<div class="col-md-8 post-detail">
+			<img src="{{post.wallpaper.url }}" class="wallpaper img-responsive" width="100%">
+			{% if post.published_date %}
+				<div class="date">
+					{{ post.published_date }}
+				</div>
+			{% endif %}
+			<h1>{{ post.title }}</h1>
+			<div class="post-text"><p>{{ post.text|safe|linebreaksbr }}</p></div>
+		</div><!-- end col-md-8 -->
+	</div><!-- end row -->
+</div><!-- end container post -->
+{% endblock %}
+
