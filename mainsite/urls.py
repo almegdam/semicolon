@@ -20,6 +20,8 @@ from django.contrib import admin
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib import admin
+admin.autodiscover()
 
 #urlpatterns = patterns('',
 #    (r'^', include('blog.urls')),
@@ -28,4 +30,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 		url(r'', include('blog.urls')),
+#		url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
+#		url(r'^login/$', 'blog.views.login_user'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

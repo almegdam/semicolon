@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+				<div class="img-top" style="background-image:url({% static 'imgs/ThinkTwice.jpg' %});"></div>
+				<div class="clearfix"></div>
+				<div class="container content">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="container col-md-10">
+							<div class="row">
+							{% for post in posts %}
+								<div id="" class="col-sm-4 box">
+        					<div id="" class="box-semicolon">
+        						<a href="{% url 'post_detail' pk=post.pk %}">
+                			<span class="thumb">
+            						<img src="{{ post.wallpaper.url }}" class="img-responsive" alt="" height="180" width="300" style="height: 180 !important;">
+        							</span>
+                			<span class="title">
+												<h3>{{ post.title }}</h3></br>
+												<small>تاريخ إضافة الموضوع</small><br>
+														{{ post.created_date|date:'d-m-Y' }}
+											</span>        
+    								</a>
+									</div>
+    						</div><!-- end post box -->
+							{% endfor %}
+							</div><!-- end row in col-md-10 -->
+						</div><!-- end container col-md-10 -->
+					<div class="col-md-1"></div>
+				</div><!-- end row in container content-->
+			</div><!-- end container content -->
+{% endblock %}

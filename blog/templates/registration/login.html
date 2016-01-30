@@ -1,0 +1,32 @@
+
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+	<div class="signin">
+    <div class="container">
+{% if next %}
+			<form class="form-signin" action="/login/?next={{next}}" method="post" >
+{%else%}
+      <form class="form-signin" method="post" action="/login/">
+{% endif %}
+{% csrf_token %}
+        <h2 class="form-signin-heading">تسجيل الدخول</h2>
+        <label for="username" class="sr-only">اسم المستخدم</label>
+        <input id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="" type="text">
+        <label for="password" class="sr-only">الرمز السري</label>
+        <input id="password" name="password" class="form-control" placeholder="Password" required="" type="password">
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="سجل الدخول" />
+				<input type="hidden" name="next" value="{{ next }}" />
+      </form>
+
+    </div> <!-- /container -->
+		</div> <!-- /signin -->
+
+
+{% endblock %}
+
