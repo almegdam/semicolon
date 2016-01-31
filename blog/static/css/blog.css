@@ -1,114 +1,19 @@
+/* import droidarabikufi */
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-a {
-		text-decoration: none !important;
-}
-
 body {
-	margin: 0px;
 	background-color:#F4F4F4;
-	height: 100%;
-/*	line-height: 20px;*/
 }
 
-/*navbar top */
-.navbar-default {
-  background-color: #3cb6e7;
-  border-color: #2ba2c0;
+a {
+	text-decoration: none !important;
 }
-.navbar-default .navbar-brand {
-  color: #f6f6f7;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #f3fefc;
-}
-.navbar-default .navbar-text {
-  color: #f6f6f7;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #f6f6f7;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #f3fefc;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #3cb6e7;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #f6f6f7;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #f3fefc;
-  background-color: #2ba2c0;
-}
-.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-  background-color: #3cb6e7;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #f3fefc;
-  background-color: #2ba2c0;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #f3fefc;
-  background-color: #2ba2c0;
-}
-.navbar-default .navbar-toggle {
-  border-color: #2ba2c0;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #2ba2c0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #f6f6f7;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #f6f6f7;
-}
-.navbar-default .navbar-link {
-  color: #f6f6f7;
-}
-.navbar-default .navbar-link:hover {
-  color: #f3fefc;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #f6f6f7;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #f3fefc;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #f3fefc;
-    background-color: #2ba2c0;
-  }
-}
-
-.navbar {
-	margin: 0px
-}
-/* end nvabar top */
-
-/* image top page */
-.img-top {
-    background-size: cover;
-    background-position: center center;
-    min-height: 180px;
-    max-height: 200px;
-    border-bottom: 1px solid #2ba2c0;
-}
-/* end image top page */
 
 .content , .post{
 	margin-top:20px;
 }
 
-* {
-    box-	sizing: border-box;
-}
-
+/* box-semicolon posts list */
 div.box-semicolon {
     background: #FFF none repeat scroll 0% 0%;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -135,15 +40,6 @@ div.box-semicolon .link-overlay {
     background: transparent none repeat scroll 0% 0%;
     transition: background-color 0.3s ease 0s;
 }
-/*
-.fa {
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-}
-*/
 
 div.box .title {
     display: block;
@@ -179,6 +75,7 @@ div.box-semicolon .title {
     padding: 10px;
     color: #000;
 }
+/* end box-semicolon posts list */
 
 .h-space {
     height: 30px;
@@ -211,14 +108,15 @@ div.footer {
 .wallpaper {
 }
 
-* {font-family: 'Droid Arabic Kufi', serif;}
+* {
+		font-family: 'Droid Arabic Kufi', serif;
+}
 
 .post-text {
 	font-size: 20px;
 }
 .post-text p{
 	font-size: 20px;
-	/*line-height: 20px;*/	
 }
 
 .maintain {
@@ -348,50 +246,12 @@ div.contact {
 }
 
 /* comment */
-.detailBox {
-    width:320px;
-    border:1px solid #bbb;
-    margin:50px;
-}
-.titleBox {
-    background-color:#fdfdfd;
-    padding:10px;
-}
-.titleBox label{
-  color:#444;
-  margin:0;
-  display:inline-block;
-}
 
 .commentBox {
     padding:10px;
     border-top:1px dotted #bbb;
 }
-.commentBox .form-group:first-child, .actionBox .form-group:first-child {
-    width:80%;
-}
-.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
-    width:18%;
-}
-.actionBox .form-group * {
-    width:100%;
-}
-.taskDescription {
-    margin-top:10px 0;
-}
-.commentList {
-    padding:0;
-    list-style:none;
-    max-height:200px;
-    overflow:auto;
-}
-.commentList li {
-    margin:0;
-    margin-top:10px;
-}
-.commentList li > div {
-    display:table-cell;
-}
+
 .commenterImage {
     width:30px;
     margin-right:5px;
@@ -402,21 +262,100 @@ div.contact {
     width:100%;
     border-radius:50%;
 }
-.commentText p {
-    margin:0;
-}
-.sub-text {
-    color:#aaa;
-    font-family:verdana;
-    font-size:11px;
-}
-.actionBox {
-    border-top:1px dotted #bbb;
-    padding:10px;
-}
-/* end comment */
 
 .comment-form {
 		padding-top: 20px;
 }
+/* end comment */
+
+
+/*navbar top */
+.navbar-default {
+  background-color: #3cb6e7;
+  border-color: #2ba2c0;
+}
+.navbar-default .navbar-brand {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #f3fefc;
+}
+.navbar-default .navbar-text {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #f3fefc;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #3cb6e7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #3cb6e7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #f3fefc;
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #2ba2c0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f6f6f7;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f6f6f7;
+}
+.navbar-default .navbar-link {
+  color: #f6f6f7;
+}
+.navbar-default .navbar-link:hover {
+  color: #f3fefc;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f6f6f7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f3fefc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f3fefc;
+    background-color: #2ba2c0;
+  }
+}
+
+.navbar {
+	margin: 0px
+}
+/* end nvabar top */
+
+/* image top page */
+.img-top {
+    background-size: cover;
+    background-position: center center;
+    min-height: 180px;
+    max-height: 200px;
+    border-bottom: 1px solid #2ba2c0;
+}
+/* end image top page */
 

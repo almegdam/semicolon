@@ -1,41 +1,6 @@
-#try
-# -*- coding: utf-8 -*-
-"""from django.shortcuts import render_to_response
-from django.template import RequestContext
-from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
-
-from .models import Document
-from .forms import DocumentForm
-def list(request):
-    # Handle file upload
-    if request.method == 'POST':
-        form = DocumentForm(request.POST, request.FILES)
-        if form.is_valid():
-            newdoc = Document(docfile = request.FILES['docfile'])
-            newdoc.save()
-
-            # Redirect to the document list after POST
-            return HttpResponseRedirect(reverse('blog.views.list'))
-    else:
-        form = DocumentForm() # A empty, unbound form
-
-    # Load documents for the list page
-    documents = Document.objects.all()
-
-    # Render list page with the documents and the form
-    return render_to_response(
-        'blog/list.html',
-        {'documents': documents, 'form': form},
-        context_instance=RequestContext(request)
-    )
-"""
-# end try
-
 from django.http import *
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
-
 from django.shortcuts import render, render_to_response, get_object_or_404, redirect
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
@@ -48,7 +13,7 @@ def post_list(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'blog/post_list.html', {'posts':posts})
 
-@login_required
+@login_required(login_url='/login/')
 def post_draft_list(request):
 	posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
 	return render(request, 'blog/post_draft_list.html', {'posts':posts})
@@ -102,7 +67,7 @@ def post_edit(request, pk):
 		form = PostForm(instance=post)
 	return render(request, 'blog/post_edit.html', {'form': form})
 
-#try login
+#login
 def login_user(request):
     logout(request)
     username = password = ''
@@ -141,22 +106,6 @@ def add_comment_to_post(request, pk):
 #        form = CommentForm()
 #    return render(request, 'blog/add_comment_to_post.html', {'form': form})
       return redirect('blog.views.post_detail', pk=post.pk)
-"""
-def post_new(request):
-	if request.method == "POST":
-		form = PostForm(request.POST, request.FILES)
-		if form.is_valid():
-			post = Post(wallpaper = request.FILES['wallpaper'])
-			post.title = request.POST['title']
-			post.text	 = request.POST['text']
-			post.author = request.user
-			post.created_date = timezone.now()
-			post.save()
-			return redirect('post_detail', pk=post.pk)
-	else:
-		form = PostForm()
-	return render(request, 'blog/post_edit.html', {'form': form})
-"""
 
 """
 def post_edit(request, pk):
@@ -174,8 +123,6 @@ def post_edit(request, pk):
 			post.save()
 			return redirect('post_detail', pk=post.pk)
 	else:
-		form = PostForm(data)
+																									form = PostForm(data)
 	return render(request, 'blog/post_edit.html', {'form': form})
 """
-
-
